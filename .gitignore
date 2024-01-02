@@ -1,3 +1,5 @@
+.unused
+.vscode
 *.gem
 *.rbc
 /.config
