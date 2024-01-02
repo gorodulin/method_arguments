@@ -1,6 +1,6 @@
 # method_arguments gem
 
-With the [method_attributes](https://github.com/gorodulin/method_attributes) gem you can easily set object attributes from method arguments.
+With the [method_arguments](https://github.com/gorodulin/method_arguments?tab=readme-ov-file#method_arguments-gem) gem you can easily set object attributes from method arguments.
 
 Transform this:
 
