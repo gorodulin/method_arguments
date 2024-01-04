@@ -35,7 +35,29 @@ Within any method, call `__method_args__` to retrieve its arguments as a Hash.
   end
 ```
 
-***Note:**  The returned Hash excludes `*rest`, `**keyrest` and `&block` arguments regardless of their name.*
+<details>
+  <summary>Limitations</summary>
+  <br>
+  
+  1. Argument types `*rest` and `**keyrest` are ignored regardless of their name:
+     
+      ```ruby
+      def initialize(arg, *arg_rest, kw_arg:, **kw_rest)
+        __method_args__ # returns { a: <value>, kw_arg: <value> }
+      end
+      ```
+      
+      This is due to security reasons. One should not cast unknown arbitrary arguments to instance variables.
+      
+  2. The method does not support argument forwarding:
+
+      ```ruby
+      def self.call(...)
+        new(__method_args__).call # raises error
+      end
+      ```
+  
+</details>
 
 ### Filling instance @variables
 
@@ -47,7 +69,8 @@ To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Modul
 
 <details>
   <summary>Example</summary>
-
+  <br>
+  
   Before:
 
   ```ruby
