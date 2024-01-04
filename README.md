@@ -114,8 +114,13 @@ To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Modul
     ```
 
 
-## Supported Ruby versions
+## Supported Ruby Versions
 
-Tested on MRI v2.7.2, v3.0.3, v3.1.2 (x86_64)
+This gem is designed to be compatible with Ruby 2.7 and above. It has been tested on the following MRI versions:
 
-> Keywords: #ruby #args #arguments #attributes #attrs #p20220903a #method
+- v2.7.2
+- v3.0.3
+- v3.1.2
+
+If you encounter any issues with later versions, please feel free to report them.
+
