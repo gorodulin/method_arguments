@@ -23,9 +23,9 @@ into this streamlined version:
   end
 ```
 
-## Feature
+## Features
 
-### Reading Method Arguments
+### 1. Reading Method Arguments
 
 Within any method, call `__method_args__` to retrieve its arguments as a Hash.
 
@@ -59,11 +59,11 @@ Within any method, call `__method_args__` to retrieve its arguments as a Hash.
   
 </details>
 
-### Filling instance @variables
+### 2. Filling instance @variables
 
 Use `set_instance_vars(hash)` to assign instance variables from a Hash.
 
-### Filling instance @variables using attribute writers
+### 3. Filling instance @variables using attribute writers
 
 To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Module.html#method-i-attr_writer)), add `use_writers: true` argument. If a writer with the corresponding name exists, it will be invoked.
 
