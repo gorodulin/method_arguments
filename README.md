@@ -49,7 +49,7 @@ Within any method, call `__method_args__` to retrieve its arguments as a Hash.
       
       Casting unknown arbitrary arguments to instance variables is not recommended for security reasons.
       
-  2. The method does not support argument forwarding:
+  2. The method does not support [argument forwarding](https://docs.ruby-lang.org/en/3.2/syntax/methods_rdoc.html#label-Argument+Forwarding):
 
       ```ruby
       def self.call(...)
