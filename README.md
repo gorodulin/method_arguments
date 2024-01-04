@@ -47,7 +47,7 @@ Within any method, call `__method_args__` to retrieve its arguments as a Hash.
       end
       ```
       
-      This is due to security reasons. One should not cast unknown arbitrary arguments to instance variables.
+      Casting unknown arbitrary arguments to instance variables is not recommended for security reasons.
       
   2. The method does not support argument forwarding:
 
@@ -74,12 +74,11 @@ To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Modul
   Before:
 
   ```ruby
-  def initialize(user_entity, first_name:, last_name:, age:, ...)
+  def initialize(user_entity, first_name:, last_name:, age:)
     @user_entity = user_entity
     @first_name = first_name
     @last_name = last_name
     self.age = age
-    ...
   end
 
   def age=(val)
