@@ -100,7 +100,7 @@ To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Modul
   ```
 </details>
 
-### Installation
+## Installation
 
 1. Add to your Gemfile, then run `bundle install`:
 
@@ -115,7 +115,7 @@ To leverage setters ([attribute writers](https://docs.ruby-lang.org/en/3.1/Modul
     ```
 
 
-### Supported Ruby versions
+## Supported Ruby versions
 
 Tested on MRI v2.7.2, v3.0.3, v3.1.2 (x86_64)
 
