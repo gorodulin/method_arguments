@@ -3,7 +3,7 @@
 require_relative "lib/method_arguments/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "method_arguments"
+  spec.name          = "ruby-method-arguments"
   spec.version       = MethodArguments::VERSION
   spec.authors       = ["Vladimir Gorodulin"]
   spec.email         = ["ru.hostmaster@gmail.com"]
